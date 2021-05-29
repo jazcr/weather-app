@@ -29,24 +29,24 @@
                     </form>
                 </nav>
                 <div class="d-flex gap-2 flex-column">
-                    <button class="cityName btn btn-primary" type="button">Atlanta</button>
-                    <button class="cityName btn btn-primary" type="button">Austin</button>
-                    <button class="cityName btn btn-primary" type="button">Chicago</button>
-                    <button class="cityName btn btn-primary" type="button">New York</button>
-                    <button class="cityName btn btn-primary" type="button">Orlando</button>
-                    <button class="cityName btn btn-primary" type="button">San Diego</button>
-                    <button class="cityName btn btn-primary" type="button">Seattle</button>
+                    <button class="cityName atlanta btn btn-primary" type="button">Atlanta</button>
+                    <button class="cityName austin btn btn-primary" type="button">Austin</button>
+                    <button class="cityName chicago btn btn-primary" type="button">Chicago</button>
+                    <button class="cityName newYork btn btn-primary" type="button">New York</button>
+                    <button class="cityName orlando btn btn-primary" type="button">Orlando</button>
+                    <button class="cityName sanDiego btn btn-primary" type="button">San Diego</button>
+                    <button class="cityName seattle btn btn-primary" type="button">Seattle</button>
                 </div>
               </div>
 
               <!-- SECTION THAT DISPLAYS WEATHER -->
               <div class="col-sm-8 border border-dark rounded" id="weatherDisplay">
                 <div class="col-8">
-                    <h2 class="userCity border border-dark rounded">City</h2>
-                    <p class="temp">Temp: </p>
-                    <p class="wind">Wind: </p>
-                    <p class="humidity">Humidity: </p>
-                    <p class="uvIndex">UV index: </p>
+                    <h2 class="userCity border border-dark rounded">City<span class="mainIcon"></span></h2>
+                    <p>Temp: <span class='temp'></span>&#8457; </p>
+                    <p>Wind: <span class='wind'></span> MPH</p>
+                    <p>Humidity: <span class='humidity'></span>%</p>
+                    <p>UV index: <span class='uvIndex'></span></p>
                 </div>
 
                 <!-- 5 day forecast section -->
@@ -120,6 +120,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="config.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script src='script.js'></script>
   </body>
 </html>

@@ -1,0 +1,38 @@
+
+header {
+    margin: 4px;
+    padding: 3px;
+    background-color: rgb(100, 157, 231);
+}
+
+
+.cityName {
+    margin: 5px;
+}
+
+#weatherDisplay {
+    margin-top: 10px;
+}
+
+.userCity {
+    margin-top: 6px;
+    padding: 5px px;
+}
+
+.weatherCards h4 {
+    font-size: 16px;
+    padding-left: 4px;
+}
+.card {
+    margin: 0 5px;
+    font-size: 12px;
+    padding: 0px;
+    height: 11rem;
+}
+
+.card-title {
+    padding-bottom: 0px;
+}
+.card-body {
+    padding: 5px;
+}

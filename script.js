@@ -1,6 +1,7 @@
 var mykey = config.MY_KEY;
+let city = "Denver";
 
-var initWeather = 'http://api.openweathermap.org/data/2.5/weather?q=Denver&units=imperial&appid=' + mykey;
+var initWeather = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + 'units=imperial&appid=' + mykey;
 
 $.ajax({
     url: initWeather,

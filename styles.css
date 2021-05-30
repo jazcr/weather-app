@@ -14,9 +14,18 @@ header {
     margin-top: 10px;
 }
 
+.top {
+    display: flex;
+}
 .userCity {
+    display: inline-block;
     margin-top: 6px;
-    padding: 5px px;
+    padding: 5px;
+}
+
+
+.mainIcon {
+    display: inline-block;
 }
 
 .weatherCards h4 {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <title>Weather App</title>
 </head>
 <body>
@@ -28,21 +29,16 @@
                         <button class="searchBtn btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </nav>
-                <div class="d-flex gap-2 flex-column">
-                    <button class="cityName atlanta btn btn-primary" type="button">Atlanta</button>
-                    <button class="cityName austin btn btn-primary" type="button">Austin</button>
-                    <button class="cityName chicago btn btn-primary" type="button">Chicago</button>
-                    <button class="cityName newYork btn btn-primary" type="button">New York</button>
-                    <button class="cityName orlando btn btn-primary" type="button">Orlando</button>
-                    <button class="cityName sanDiego btn btn-primary" type="button">San Diego</button>
-                    <button class="cityName seattle btn btn-primary" type="button">Seattle</button>
-                </div>
+                <div class="d-flex gap-2 flex-column"></div>
               </div>
 
               <!-- SECTION THAT DISPLAYS WEATHER -->
               <div class="col-sm-8 border border-dark rounded" id="weatherDisplay">
                 <div class="col-8">
-                    <h2 class="userCity border border-dark rounded">City<span class="mainIcon"></span></h2>
+                    <div class="top">
+                      <h2 class="userCity border border-dark rounded">city</h2>
+                      <div class="mainIcon"></div>
+                    </div>
                     <p>Temp: <span class='temp'></span>&#8457; </p>
                     <p>Wind: <span class='wind'></span> MPH</p>
                     <p>Humidity: <span class='humidity'></span>%</p>
@@ -53,58 +49,13 @@
                 <div class="weatherCards border border-dark rounded d-flex">
                     <h4>5-Day Forecast: </h4>
                     
-                    <div class="card" style="width: 6rem;">
+                    <div class="card fiveDayFore" style="width: 6rem;">
                         <div class="card-body">
                           <h5 class="card-title cardDate">Date</h5>
-                          <div class="weatherImage">img</div>
-                          <p class="card-text cardTemp">Temp</p>
-                          <p class="card-text cardWind">Wind</p>
-                          <p class="card-text cardHumidity">Humidity</p>
-                        </div>
-                      </div>
-                    <div class="card" style="width: 6rem;">
-                        <div class="card-body">
-                          <h5 class="card-title cardDate">Date</h5>
-                          <div class="weatherImage">img</div>
-                          <p class="card-text cardTemp">Temp</p>
-                          <p class="card-text cardWind">Wind</p>
-                          <p class="card-text cardHumidity">Humidity</p>
-                        </div>
-                      </div>
-                    <div class="card" style="width: 6rem;">
-                        <div class="card-body">
-                          <h5 class="card-title cardDate">Date</h5>
-                          <div class="weatherImage">img</div>
-                          <p class="card-text cardTemp">Temp</p>
-                          <p class="card-text cardWind">Wind</p>
-                          <p class="card-text cardHumidity">Humidity</p>
-                        </div>
-                      </div>
-                    <div class="card" style="width: 6rem;">
-                        <div class="card-body">
-                          <h5 class="card-title cardDate">Date</h5>
-                          <div class="weatherImage">img</div>
-                          <p class="card-text cardTemp">Temp</p>
-                          <p class="card-text cardWind">Wind</p>
-                          <p class="card-text cardHumidity">Humidity</p>
-                        </div>
-                      </div>
-                    <div class="card" style="width: 6rem;">
-                        <div class="card-body">
-                          <h5 class="card-title cardDate">Date</h5>
-                          <div class="weatherImage">img</div>
-                          <p class="card-text cardTemp">Temp</p>
-                          <p class="card-text cardWind">Wind</p>
-                          <p class="card-text cardHumidity">Humidity</p>
-                        </div>
-                      </div>
-                    <div class="card" style="width: 6rem;">
-                        <div class="card-body">
-                          <h5 class="card-title cardDate">Date</h5>
-                          <div class="weatherImage">img</div>
-                          <p class="card-text cardTemp">Temp</p>
-                          <p class="card-text cardWind">Wind</p>
-                          <p class="card-text cardHumidity">Humidity</p>
+                          <div class="weatherIcon">img</div>
+                          <p class="card-text cardTemp">Temp: <span></span></p>
+                          <p class="card-text cardWind">Wind: <span></span></p>
+                          <p class="card-text cardHumidity">Humidity: <span></span></p>
                         </div>
                       </div>
 
@@ -120,7 +71,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="config.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script src='script.js'></script>
   </body>
 </html>

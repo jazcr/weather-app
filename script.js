@@ -46,7 +46,7 @@ $(".searchBtn").click(function(event) {
         console.log(response)
 
         //sections for each card -- 5 day forecast
-        $(".uvIndex").text(response.current.uvi)
+        $("#uvIndex").text(response.current.uvi)
 
         let uv = (response.current.uvi)
         console.log(uv);

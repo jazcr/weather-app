@@ -45,21 +45,33 @@ header {
 .uvGreen {
     background-color: rgb(25, 121, 1);
     color: white;
+    border-radius: 6px;
+    padding: 0.5em 0.8em;
+    font-size: 85%;
 }
 
 .uvYellow {
     background-color: rgb(235, 235, 1);
     color: black;
+    border-radius: 6px;
+    padding: 0.5em 0.8em;
+    font-size: 85%;
 }
 
 .uvOrange {
     background-color: rgb(223, 132, 29);
     color: white;
+    border-radius: 6px;
+    padding: 0.5em 0.8em;
+    font-size: 85%;
 }
 
 .uvRed {
     background-color: red;
     color: white;
+    border-radius: 6px;
+    padding: 0.5em 0.8em;
+    font-size: 85%;
 }
 
 .uvPurple {

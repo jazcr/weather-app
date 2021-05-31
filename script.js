@@ -1,4 +1,4 @@
-let mykey = config.MY_KEY;
+let mykey = '1a1bec353061d1a0bd100b82d96e24d3';
 let cityList = [];
 // let city = "Denver";
 

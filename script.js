@@ -46,15 +46,16 @@ $(".searchBtn").click(function(event) {
                 let uv = (Math.floor(response.current.uvi))
                 console.log(uv);
 
-                if (uv < 3) {
-                    $(".uvIndex").addClass('uvGreen');
-                } else if (uv > 3 || uv < 6) {
-                    $(".uvIndex").addClass('uvYellow');
-                } else if (uv > 6 || uv < 8) {
-                    $(".uvIndex").addClass('uvOrange');
-                } else if (uv > 8 || uv < 11); {
-                    $(".uvIndex").addClass('uvRed');  
-                } 
+                // if (uv < 3) {
+                //     $(".uvIndex").addClass('uvGreen');
+                // } else if (uv > 3 || uv < 6) {
+                //     $(".uvIndex").addClass('uvYellow');
+                // } else if (uv > 6 || uv < 8) {
+                //     $(".uvIndex").addClass('uvOrange');
+                // } else if (uv > 8 || uv < 11); {
+                //     $(".uvIndex").addClass('uvRed');  
+                // } 
+
 
                     $(".cardDate0").text(moment().add(1, 'days').format('L'))
                     $(".weatherIcon0").html("<img src=\"http://openweathermap.org/img/wn/" + response.daily[0].weather[0].icon + ".png\">");

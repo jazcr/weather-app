@@ -62,6 +62,11 @@ header {
     color: white;
 }
 
+.uvPurple {
+    background-color: purple;
+    color: white;
+}
+
 .weatherCards h4 {
     font-size: 16px;
     padding-left: 4px;

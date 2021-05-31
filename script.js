@@ -9,12 +9,13 @@ function updateDay() {
 }
 
 
-
-
-function userInputWeather() {
-    // let city = $(".inputValue").val();
-    let initWeather = 'http://api.openweathermap.org/data/2.5/weather?q=Denver&units=imperial&appid=' + mykey;
-    console.log(initWeather)
+// 'get weather' function
+$(".searchBtn").click(function() {
+    let city = $(".inputValue").val();
+    let initWeather = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=' + mykey;
+    // let forecastAPI = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&units=imperial&cnt=5&appid=" + mykey;
+    // let lon;
+    // let lat;
 
     $.ajax({
         url: initWeather,
@@ -30,7 +31,18 @@ function userInputWeather() {
             console.log(response)
         })
  
-};
+});
 
-userInputWeather();
+
+
+// function userInputWeather() {
+    
+    
+//     $.ajax({
+//         url: forecastAPI,
+//         method: "GET"
+//     }).then(function(response) {
+
+//     
+//     })
 
